@@ -44,5 +44,11 @@
     <Compile Include="ManipulandoArquivos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\model\MVC.model.csproj">
+      <Project>{23b03669-69fb-4691-b569-5de9c6d85051}</Project>
+      <Name>MVC.model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
