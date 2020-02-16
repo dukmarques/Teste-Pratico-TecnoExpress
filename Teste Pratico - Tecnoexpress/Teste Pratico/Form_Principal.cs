@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controller;
 
 namespace Teste_Pratico
 {
     public partial class Form_Principal : Form
     {
+        Controll controller = new Controll();
         public Form_Principal()
         {
             InitializeComponent();
+        }
+
+        private void Form_Principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

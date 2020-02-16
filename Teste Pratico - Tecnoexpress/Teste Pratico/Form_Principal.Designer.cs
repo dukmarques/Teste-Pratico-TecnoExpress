@@ -38,6 +38,7 @@
             this.MaximizeBox = false;
             this.Name = "Form_Principal";
             this.Text = "Orçamento";
+            this.Load += new System.EventHandler(this.Form_Principal_Load);
             this.ResumeLayout(false);
 
         }
