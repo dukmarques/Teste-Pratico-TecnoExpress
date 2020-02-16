@@ -1,6 +1,6 @@
 ﻿namespace Teste_Pratico
 {
-    partial class Form1
+    partial class Form_Principal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form_Principal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(514, 382);
+            this.MaximizeBox = false;
+            this.Name = "Form_Principal";
+            this.Text = "Orçamento";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

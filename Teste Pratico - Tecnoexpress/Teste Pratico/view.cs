@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Teste_Pratico
 {
-    static class Program
+    static class view
     {
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
@@ -16,7 +16,7 @@ namespace Teste_Pratico
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form_Principal());
         }
     }
 }

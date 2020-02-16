@@ -1,0 +1,9 @@
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\Teste Pratico.exe.config
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\Teste Pratico.exe
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\Teste Pratico.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\view.csprojAssemblyReference.cache
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\Teste_Pratico.Form_Principal.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\Teste_Pratico.Properties.Resources.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\view.csproj.GenerateResource.cache
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\Teste Pratico.exe
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\Teste Pratico.pdb
