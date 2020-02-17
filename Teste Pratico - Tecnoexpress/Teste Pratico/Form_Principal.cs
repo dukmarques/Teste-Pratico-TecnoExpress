@@ -17,7 +17,7 @@ namespace Teste_Pratico
         public Form_Principal()
         {
             InitializeComponent();
-            controller.testArquivo();
+            controller.test();
         }
 
         private void Form_Principal_Load(object sender, EventArgs e)

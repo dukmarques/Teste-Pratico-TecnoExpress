@@ -15,3 +15,5 @@ C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - T
 C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\pt-BR\Teste Pratico.resources.dll
 C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\Util.dll
 C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\Util.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\model.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\model.pdb

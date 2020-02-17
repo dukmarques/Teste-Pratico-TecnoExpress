@@ -10,31 +10,31 @@ namespace Util
 {
     public class ManipulandoArquivos
     {
-        public static string readFile(string path)
+        //Método que realiza a leitura dos arquivos e retorna uma lista contendo o texto de cada linha;
+        public static List<String> readFile(string path)
         {
             if (File.Exists(path))
             {
                 using (Stream sr = File.Open(path, FileMode.Open))
                 {
+                    List<string> txtList = new List<string>();
                     StreamReader read = new StreamReader(sr);
-                    string linha = read.ReadLine();
+                    string linha = null;
 
-                    while (linha != null)
+                    while ((linha = read.ReadLine()) != null)
                     {
-                        MessageBox.Show(linha); /*Teste*/
-                        linha = read.ReadLine();
+                        txtList.Add(linha);
                     }
 
-                    return null;
+                    return txtList;
                 }
             }
             {
-                MessageBox.Show("Arquivo não encontrado!");
-                return null;
+                return null; //Caso o arquivo não seja encontrado, é retornado null;
             }
         }
 
-        //Método para adicionar contéúdo ao arquivo sem sobrescrever o conteúdo existente
+        //Método para adicionar contéúdo ao arquivo sem sobrescrever o conteúdo existente;
         public static void writeFile(string path)
         {
             if (File.Exists(path))

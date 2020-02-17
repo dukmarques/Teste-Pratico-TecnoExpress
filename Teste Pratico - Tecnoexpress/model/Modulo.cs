@@ -28,5 +28,10 @@ namespace model
         public bool ModBasico { get => modBasico; set => modBasico = value; }
         public double Preco { get => preco; set => preco = value; }
         internal List<Funcionalidade> Funcionalidades { get => funcionalidades; set => funcionalidades = value; }
+
+        public override string ToString()
+        {
+            return $"Código: {this.codigo}, Descrição: {this.descricao}, Básico: {this.modBasico}, Preço: R${this.preco}";
+        }
     }
 }
