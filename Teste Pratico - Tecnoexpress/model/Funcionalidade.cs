@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace model
 {
-    class Funcionalidade
+    public class Funcionalidade
     {
         private int codModulo;
         private string descricao;
@@ -19,5 +19,10 @@ namespace model
 
         public int CodModulo { get => codModulo; set => codModulo = value; }
         public string Descricao { get => descricao; set => descricao = value; }
+
+        public override string ToString()
+        {
+            return $"Código do Módulo: {this.codModulo}, Descrição: {this.descricao}";
+        }
     }
 }
