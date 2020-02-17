@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.view", "Teste Pratico\MVC.view.csproj", "{6D985951-9AEF-4078-8C5E-D0691C07D8FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "view", "Teste Pratico\view.csproj", "{6D985951-9AEF-4078-8C5E-D0691C07D8FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.model", "model\MVC.model.csproj", "{23B03669-69FB-4691-B569-5DE9C6D85051}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj", "{23B03669-69FB-4691-B569-5DE9C6D85051}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Controller", "Controller\MVC.Controller.csproj", "{16257309-12A4-47BF-BA08-30369CE8514E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controller", "Controller\controller.csproj", "{16257309-12A4-47BF-BA08-30369CE8514E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{1632ED45-AAE4-4A97-9C14-71A06230240D}"
 EndProject

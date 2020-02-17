@@ -1,0 +1,4 @@
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\model\bin\Debug\model.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\model\bin\Debug\model.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\model\obj\Debug\model.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\model\obj\Debug\model.pdb

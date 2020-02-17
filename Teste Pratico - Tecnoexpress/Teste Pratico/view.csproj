@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="view.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Principal.pt-BR.resx">
+      <DependentUpon>Form_Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Principal.resx">
       <DependentUpon>Form_Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,9 +83,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Controller\MVC.Controller.csproj">
+    <ProjectReference Include="..\Controller\controller.csproj">
       <Project>{16257309-12a4-47bf-ba08-30369ce8514e}</Project>
-      <Name>MVC.Controller</Name>
+      <Name>controller</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Util
 {
@@ -20,14 +21,15 @@ namespace Util
 
                     while (linha != null)
                     {
-                        /*Código*/
+                        MessageBox.Show(linha); /*Teste*/
+                        linha = read.ReadLine();
                     }
 
                     return null;
                 }
             }
-            else
             {
+                MessageBox.Show("Arquivo não encontrado!");
                 return null;
             }
         }
