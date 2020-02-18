@@ -102,7 +102,8 @@ namespace Teste_Pratico
         {
             if (MessageBox.Show("Deseja realmente finalizar o orçamento?", "Finalizar orçamento", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                
+                FinalizacaoOrcamento fo = new FinalizacaoOrcamento(this.controller);
+                fo.ShowDialog();
             }
         }
     }

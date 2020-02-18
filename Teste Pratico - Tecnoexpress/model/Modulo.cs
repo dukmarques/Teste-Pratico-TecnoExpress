@@ -27,7 +27,7 @@ namespace model
         public string Descricao { get => descricao; set => descricao = value; }
         public bool ModBasico { get => modBasico; set => modBasico = value; }
         public double Preco { get => preco; set => preco = value; }
-        internal List<Funcionalidade> Funcionalidades { get => funcionalidades; set => funcionalidades = value; }
+        public List<Funcionalidade> Funcionalidades { get => funcionalidades; set => funcionalidades = value; }
 
         //Adiciona uma funcionalidade a lista de funcionalidades do módulo
         public void AddFuncionalidade(Funcionalidade f)
@@ -37,14 +37,8 @@ namespace model
 
         public override string ToString()
         {
-            string func = "";
+            string s = $"{this.descricao}   Preço: R${this.preco}";
             
-            foreach(Funcionalidade f in funcionalidades)
-            {
-                func += $"{f.Descricao}\n";
-            }
-
-            string s = $"Código: {this.codigo}, Descrição: {this.descricao}, Básico: {this.modBasico}, Preço: R${this.preco} \nFuncionalidades do Módulo: {func}";
             return s;
         }
     }

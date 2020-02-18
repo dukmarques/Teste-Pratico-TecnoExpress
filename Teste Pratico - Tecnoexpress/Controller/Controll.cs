@@ -112,15 +112,16 @@ namespace Controller
         public double finalizarOrcamento()
         {
             double precoTotal = 0;
-            bool modBasico = false;
+            bool basico = false;
 
             foreach(Modulo m in modulosSelecionados)
             {
-                if(m.ModBasico == true && modBasico == false)
+                if((m.ModBasico == true) && (basico == false))
                 {
                     precoTotal += m.Preco;
+                    basico = true;
                 }
-                else if(!m.ModBasico)
+                else if(m.ModBasico == false)
                 {
                     precoTotal += m.Preco;
                 }

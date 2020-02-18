@@ -58,6 +58,12 @@
     <Compile Include="CadastrarModulo.Designer.cs">
       <DependentUpon>CadastrarModulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinalizacaoOrcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalizacaoOrcamento.Designer.cs">
+      <DependentUpon>FinalizacaoOrcamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarModulo.resx">
       <DependentUpon>CadastrarModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalizacaoOrcamento.resx">
+      <DependentUpon>FinalizacaoOrcamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Principal.pt-BR.resx">
       <DependentUpon>Form_Principal.cs</DependentUpon>
