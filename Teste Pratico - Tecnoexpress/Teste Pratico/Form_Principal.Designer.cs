@@ -29,51 +29,55 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Principal));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.cadastrarModulo = new System.Windows.Forms.Button();
+            this.cadastrarFuncionalidade = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.button6 = new System.Windows.Forms.Button();
+            this.listView = new System.Windows.Forms.ListView();
+            this.btnFinalizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button3
+            // cadastrarModulo
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.cadastrarModulo.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.cadastrarModulo, "cadastrarModulo");
+            this.cadastrarModulo.Name = "cadastrarModulo";
+            this.cadastrarModulo.UseVisualStyleBackColor = false;
+            this.cadastrarModulo.Click += new System.EventHandler(this.cadastrarModulo_Click);
             // 
-            // button4
+            // cadastrarFuncionalidade
             // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.cadastrarFuncionalidade.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.cadastrarFuncionalidade, "cadastrarFuncionalidade");
+            this.cadastrarFuncionalidade.Name = "cadastrarFuncionalidade";
+            this.cadastrarFuncionalidade.UseVisualStyleBackColor = false;
+            this.cadastrarFuncionalidade.Click += new System.EventHandler(this.cadastrarFuncionalidade_Click);
             // 
-            // button5
+            // btnRemove
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnRemove.BackColor = System.Drawing.Color.Transparent;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnRemove.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            resources.ApplyResources(this.btnRemove, "btnRemove");
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // label1
             // 
@@ -81,36 +85,40 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Name = "label1";
             // 
-            // listView1
+            // listView
             // 
-            this.listView1.HideSelection = false;
-            resources.ApplyResources(this.listView1, "listView1");
-            this.listView1.Name = "listView1";
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView.BackColor = System.Drawing.SystemColors.Info;
+            resources.ApplyResources(this.listView, "listView");
+            this.listView.GridLines = true;
+            this.listView.HideSelection = false;
+            this.listView.MultiSelect = false;
+            this.listView.Name = "listView";
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Tile;
             // 
-            // button6
+            // btnFinalizar
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnFinalizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFinalizar.FlatAppearance.BorderSize = 0;
+            this.btnFinalizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnFinalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SlateBlue;
+            resources.ApplyResources(this.btnFinalizar, "btnFinalizar");
+            this.btnFinalizar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnFinalizar.Name = "btnFinalizar";
+            this.btnFinalizar.UseVisualStyleBackColor = false;
             // 
             // Form_Principal
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.btnFinalizar);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.cadastrarFuncionalidade);
+            this.Controls.Add(this.cadastrarModulo);
+            this.Controls.Add(this.btnAdd);
             this.MaximizeBox = false;
             this.Name = "Form_Principal";
             this.ResumeLayout(false);
@@ -119,13 +127,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button cadastrarModulo;
+        private System.Windows.Forms.Button cadastrarFuncionalidade;
+        private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.Button btnFinalizar;
     }
 }
 
