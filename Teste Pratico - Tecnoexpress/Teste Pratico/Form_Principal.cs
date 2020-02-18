@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controller;
+using model;
 
 namespace Teste_Pratico
 {
@@ -17,28 +18,35 @@ namespace Teste_Pratico
         public Form_Principal()
         {
             InitializeComponent();
-            initListView();
+            configListView();
         }
 
-        private void initListView()
+        private void configListView()
         {
             //Propriedades do ListView
             listView.View = View.Details;
             listView.FullRowSelect = true;
 
             //Construtor do ListView
+            listView.Columns.Add("Cod", 0);
             listView.Columns.Add("Módulo", 253);
             listView.Columns.Add("Preço", 100);
         }
 
         //Método responsável por adicionar elementos na ListView
-        private void addListView(string modulo, string preco)
+        private void addListView()
         {
-            //Linha
-            string[] linha = {modulo, preco};
-            ListViewItem item = new ListViewItem(linha);
+            this.listView.Clear(); //Limpa os dados da listView
+            this.configListView(); //Configura a listView
 
-            listView.Items.Add(item);
+            List<Modulo> modulosSelecionados = controller.getModulosSelecionados();
+            
+            foreach (Modulo m in modulosSelecionados)
+            {
+                string[] linha = {Convert.ToString(m.Codigo), m.Descricao, $"R${m.Preco}"};
+                ListViewItem item = new ListViewItem(linha);
+                listView.Items.Add(item);
+            }
         }
 
         //Método responsável por deletar um item do listview
@@ -50,7 +58,11 @@ namespace Teste_Pratico
                 {
                     if ((MessageBox.Show("Deseja realmente remover item da lista?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)) == DialogResult.Yes)
                     {
-                        listView.Items.RemoveAt(listView.SelectedIndices[0]);
+                        int cod = Convert.ToInt32(listView.SelectedItems[0].Text);
+                        Console.WriteLine(cod);
+                        this.controller.removeModuloSelecionado(cod);
+
+                        this.addListView();
                     }
                 }
                 catch (ArgumentOutOfRangeException outOfRange)
@@ -59,13 +71,13 @@ namespace Teste_Pratico
                     Console.WriteLine("Error: {0}", outOfRange.Message);
                 }
             }
+            else
+            {
+                MessageBox.Show("Não há módulos para remover.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         private void cadastrarModulo_Click(object sender, EventArgs e)
         {
-            this.addListView("CONTROLE FINANCEIRO", "R$100");
-            this.addListView("CONTROLE DE COMPRA", "R$100");
-            this.addListView("CONTROLE INVESTIMENTO", "R$100");
-            this.addListView("CONTROLE VENDAS", "R$100");
 
         }
 
@@ -77,6 +89,7 @@ namespace Teste_Pratico
         {
             AdicionarModulos am = new AdicionarModulos(this.controller);
             am.ShowDialog();
+            this.addListView();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

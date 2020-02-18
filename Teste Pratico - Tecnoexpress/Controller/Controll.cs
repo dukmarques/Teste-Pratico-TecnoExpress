@@ -82,6 +82,23 @@ namespace Controller
             }
         }
 
+        //Método responsável por remover um módulo da lista de selecionados
+        public void removeModuloSelecionado(int codModulo)
+        {
+            Modulo remover = null;
+            foreach(Modulo m in this.modulosSelecionados)
+            {
+                if(m.Codigo == codModulo)
+                {
+                    remover = m;
+                }
+            }
+            if(remover != null)
+            {
+                modulosSelecionados.Remove(remover);
+            }
+        }
+
         //Método de acesso ao módulos não selecionados
         public List<Modulo> getModulosNaoSelecionados()
         {
