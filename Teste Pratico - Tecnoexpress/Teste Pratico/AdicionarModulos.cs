@@ -20,8 +20,18 @@ namespace Teste_Pratico
             this.controller = c;
         }
 
+        private void addItemListView(string modulo, string preco)
+        {
+            string[] linha = {modulo, preco};
+            ListViewItem item = new ListViewItem(linha);
+            listView.Items.Add(item);
+        }
+
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
+            this.addItemListView("COMPRAR ITEMS", "R$1000");
+            this.addItemListView("COMPRAR ITEMS", "R$1000");
+            this.addItemListView("COMPRAR ITEMS", "R$1000");
 
         }
     }

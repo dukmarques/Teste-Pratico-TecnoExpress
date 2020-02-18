@@ -55,12 +55,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Módulos";
-            this.columnHeader1.Width = 280;
+            this.columnHeader1.Width = 260;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Preço";
-            this.columnHeader2.Width = 70;
+            this.columnHeader2.Width = 85;
             // 
             // label1
             // 
@@ -100,6 +100,7 @@
             this.Controls.Add(this.btnSelecionar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(391, 556);
             this.Name = "AdicionarModulos";
