@@ -59,7 +59,6 @@ namespace Teste_Pratico
                     if ((MessageBox.Show("Deseja realmente remover item da lista?", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)) == DialogResult.Yes)
                     {
                         int cod = Convert.ToInt32(listView.SelectedItems[0].Text);
-                        Console.WriteLine(cod);
                         this.controller.removeModuloSelecionado(cod);
 
                         this.addListView();
@@ -78,11 +77,13 @@ namespace Teste_Pratico
         }
         private void cadastrarModulo_Click(object sender, EventArgs e)
         {
-
+            CadastrarModulo cd = new CadastrarModulo(this.controller);
+            cd.ShowDialog();
         }
 
         private void cadastrarFuncionalidade_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Em construção...");
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -95,6 +96,11 @@ namespace Teste_Pratico
         private void btnRemove_Click(object sender, EventArgs e)
         {
             this.deleteItemListView();
+        }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Em construção...");
         }
     }
 }

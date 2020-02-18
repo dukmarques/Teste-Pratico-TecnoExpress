@@ -99,6 +99,15 @@ namespace Controller
             }
         }
 
+        //cadastrar modulo
+        public void cadastrarModulo(string descricao, bool modBasico, double preco)
+        {
+            int codModulo = listModulos[listModulos.Count-1].Codigo + 1;
+            Modulo novo = new Modulo(codModulo, descricao.ToUpper(), modBasico, preco);
+
+            listModulos.Add(novo);
+        }
+
         //Método de acesso ao módulos não selecionados
         public List<Modulo> getModulosNaoSelecionados()
         {

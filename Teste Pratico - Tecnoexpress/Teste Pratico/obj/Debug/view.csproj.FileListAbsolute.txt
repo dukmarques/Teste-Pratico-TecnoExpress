@@ -18,3 +18,4 @@ C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - T
 C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\model.dll
 C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Debug\model.pdb
 C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\Teste_Pratico.AdicionarModulos.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Debug\Teste_Pratico.CadastrarModulo.resources

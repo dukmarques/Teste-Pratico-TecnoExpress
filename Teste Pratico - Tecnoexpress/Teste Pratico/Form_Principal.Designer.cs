@@ -106,6 +106,7 @@
             this.btnFinalizar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.UseVisualStyleBackColor = false;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // Form_Principal
             // 
