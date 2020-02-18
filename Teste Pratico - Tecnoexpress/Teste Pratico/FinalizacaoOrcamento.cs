@@ -45,5 +45,10 @@ namespace Teste_Pratico
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

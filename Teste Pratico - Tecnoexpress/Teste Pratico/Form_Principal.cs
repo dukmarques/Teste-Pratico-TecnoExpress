@@ -101,7 +101,11 @@ namespace Teste_Pratico
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Deseja realmente finalizar o orçamento?", "Finalizar orçamento", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (Convert.ToInt32(listView.Items.Count) == 0)
+            {
+                MessageBox.Show("É necessário selecionar ao menos um módulo para finalizar o orçamento.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (MessageBox.Show("Deseja realmente finalizar o orçamento?", "Finalizar orçamento", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 FinalizacaoOrcamento fo = new FinalizacaoOrcamento(this.controller);
                 fo.ShowDialog();
