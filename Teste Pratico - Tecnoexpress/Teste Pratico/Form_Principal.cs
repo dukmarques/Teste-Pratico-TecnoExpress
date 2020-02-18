@@ -83,7 +83,8 @@ namespace Teste_Pratico
 
         private void cadastrarFuncionalidade_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Em construção...");
+            CadastrarFuncionalidade cd = new CadastrarFuncionalidade(this.controller);
+            cd.ShowDialog();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

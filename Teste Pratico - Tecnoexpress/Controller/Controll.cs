@@ -59,11 +59,13 @@ namespace Controller
         //para isso ele itera a lista de modulos até encontrar o módulo através do seu código
         private void addFuncionalidade(Funcionalidade f)
         {
-            foreach(Modulo m in listModulos)
+            Console.WriteLine($"#2 {f.ToString()}");
+            foreach (Modulo m in listModulos)
             {
                 if(m.Codigo == f.CodModulo)
                 {
                     m.AddFuncionalidade(f);
+                    Console.WriteLine($"#3 {m.ToString()}");
                 }
             }
         }
@@ -109,6 +111,15 @@ namespace Controller
             listModulos.Add(novo);
         }
 
+        //Método para cadastrar uma funcionalidade
+        public void cadastrarFuncionalidade(int codModulo, string descricao)
+        {
+            Funcionalidade f = new Funcionalidade(codModulo, descricao);
+            Console.WriteLine($"#1 {f.ToString()}");
+            this.addFuncionalidade(f);
+        }
+
+        //Método responsável por finalizar o orçamento calculando e retornando o valor.
         public double finalizarOrcamento()
         {
             double precoTotal = 0;
@@ -116,6 +127,7 @@ namespace Controller
 
             foreach(Modulo m in modulosSelecionados)
             {
+                //Verifica se o módulo é basico e se já foram adicionados outros módulos básicos, caso já, não soma o valor de novos módulos básicos
                 if((m.ModBasico == true) && (basico == false))
                 {
                     precoTotal += m.Preco;
@@ -128,6 +140,12 @@ namespace Controller
             }
 
             return precoTotal;
+        }
+
+        //Método responsável por retornar a lista de módulos
+        public List<Modulo> getModulos()
+        {
+            return this.listModulos;
         }
 
         //Método de acesso ao módulos não selecionados

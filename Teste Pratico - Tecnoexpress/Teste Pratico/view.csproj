@@ -52,6 +52,12 @@
     <Compile Include="AdicionarModulos.Designer.cs">
       <DependentUpon>AdicionarModulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarFuncionalidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFuncionalidade.Designer.cs">
+      <DependentUpon>CadastrarFuncionalidade.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarModulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdicionarModulos.resx">
       <DependentUpon>AdicionarModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFuncionalidade.resx">
+      <DependentUpon>CadastrarFuncionalidade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarModulo.resx">
       <DependentUpon>CadastrarModulo.cs</DependentUpon>
