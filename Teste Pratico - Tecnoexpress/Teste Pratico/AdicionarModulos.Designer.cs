@@ -34,18 +34,21 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.btnSelecionar = new System.Windows.Forms.Button();
+            this.columnHeader0 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listView
             // 
             this.listView.BackColor = System.Drawing.SystemColors.Info;
             this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader0,
             this.columnHeader1,
             this.columnHeader2});
             this.listView.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView.GridLines = true;
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(13, 51);
+            this.listView.MultiSelect = false;
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(350, 391);
             this.listView.TabIndex = 0;
@@ -91,6 +94,10 @@
             this.btnSelecionar.UseVisualStyleBackColor = true;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             // 
+            // columnHeader0
+            // 
+            this.columnHeader0.Width = 0;
+            // 
             // AdicionarModulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,5 +124,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSelecionar;
+        private System.Windows.Forms.ColumnHeader columnHeader0;
     }
 }

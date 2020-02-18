@@ -19,6 +19,7 @@ namespace Controller
         }
 
         private List<Modulo> listModulos = new List<Modulo>();
+        private List<Modulo> modulosSelecionados = new List<Modulo>();
 
         //Método responsável por gerar as instâncias dos módulos através da leitura do arquivo, 
         //divisão da cadeia de string e da conversão de valores de string para int e bool, quando necessário.
@@ -67,16 +68,39 @@ namespace Controller
             }
         }
 
-        //Este método retorna uma lista de vetores de strings contendo a descrição e o preço dos módulos para o listView
-        public List<string[]> getDescricaoModulos()
+        /*Métodos responsável por percorrer o vetor com os indices dos módulos selecionados,
+         *ao encontrar o módulo na lista de módulos, o mesmo é adicionado na lista de selecionados.
+         */
+        public void addModuloSelecionado(int codModulo)
         {
-            List<string[]> lista = new List<string[]>();
+            foreach (Modulo m in listModulos)
+            {
+                if (m.Codigo == codModulo)
+                {
+                    modulosSelecionados.Add(m);
+                }
+            }
+        }
+
+        //Método de acesso ao módulos não selecionados
+        public List<Modulo> getModulosNaoSelecionados()
+        {
+            List<Modulo> naoSelecionados = new List<Modulo>();
+
             foreach(Modulo m in listModulos)
             {
-                string[] s = { m.Descricao, $"R${Convert.ToString(m.Preco)}" };
-                lista.Add(s);
+                if (!modulosSelecionados.Contains(m))
+                {
+                    naoSelecionados.Add(m);
+                }
             }
-            return lista;
+            return naoSelecionados;
+        }
+
+        //Método de Acesso os modulos selecionados
+        public List<Modulo> getModulosSelecionados()
+        {
+            return this.modulosSelecionados;
         }
 
         //Recebe uma cadeia de string e separa em um array de string tomando como parâmetro de separação o caracter de criterio informado;
