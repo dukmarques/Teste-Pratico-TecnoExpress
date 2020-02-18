@@ -67,20 +67,24 @@ namespace Controller
             }
         }
 
+        //Este método retorna uma lista de vetores de strings contendo a descrição e o preço dos módulos para o listView
+        public List<string[]> getDescricaoModulos()
+        {
+            List<string[]> lista = new List<string[]>();
+            foreach(Modulo m in listModulos)
+            {
+                string[] s = { m.Descricao, $"R${Convert.ToString(m.Preco)}" };
+                lista.Add(s);
+            }
+            return lista;
+        }
+
         //Recebe uma cadeia de string e separa em um array de string tomando como parâmetro de separação o caracter de criterio informado;
         private string[] splitString(string s, char criterio)
         {
             string[] stringSeparada = s.Split(criterio);
 
             return stringSeparada;
-        }
-
-        public void test()
-        {
-            foreach (Modulo m in listModulos)
-            {
-                Console.WriteLine(m.ToString());
-            }
         }
     }
 }

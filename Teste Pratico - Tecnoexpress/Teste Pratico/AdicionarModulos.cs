@@ -18,21 +18,21 @@ namespace Teste_Pratico
         {
             InitializeComponent();
             this.controller = c;
+            this.addItemListView();
         }
 
-        private void addItemListView(string modulo, string preco)
+        private void addItemListView()
         {
-            string[] linha = {modulo, preco};
-            ListViewItem item = new ListViewItem(linha);
-            listView.Items.Add(item);
+            List<string[]> modulos = controller.getDescricaoModulos();
+            foreach (string[] linha in modulos)
+            {
+                ListViewItem item = new ListViewItem(linha);
+                listView.Items.Add(item);
+            }
         }
 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-            this.addItemListView("COMPRAR ITEMS", "R$1000");
-            this.addItemListView("COMPRAR ITEMS", "R$1000");
-            this.addItemListView("COMPRAR ITEMS", "R$1000");
-
         }
     }
 }

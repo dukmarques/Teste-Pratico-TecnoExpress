@@ -18,7 +18,6 @@ namespace Teste_Pratico
         {
             InitializeComponent();
             initListView();
-            //controller.test();
         }
 
         private void initListView()
