@@ -100,7 +100,10 @@ namespace Teste_Pratico
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Em construção...");
+            if (MessageBox.Show("Deseja realmente finalizar o orçamento?", "Finalizar orçamento", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                
+            }
         }
     }
 }
