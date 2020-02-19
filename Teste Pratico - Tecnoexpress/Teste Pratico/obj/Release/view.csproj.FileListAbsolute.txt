@@ -1,0 +1,23 @@
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\Teste Pratico.exe.config
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\Teste Pratico.exe
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\Teste Pratico.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\pt-BR\Teste Pratico.resources.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\Controller.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\model.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\Util.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\Controller.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\model.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\bin\Release\Util.pdb
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\view.csprojAssemblyReference.cache
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste_Pratico.AdicionarModulos.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste_Pratico.CadastrarFuncionalidade.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste_Pratico.CadastrarModulo.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste_Pratico.FinalizacaoOrcamento.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste_Pratico.Form_Principal.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste_Pratico.Properties.Resources.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste_Pratico.Form_Principal.pt-BR.resources
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\view.csproj.GenerateResource.cache
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\pt-BR\Teste Pratico.resources.dll
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\view.csproj.CopyComplete
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste Pratico.exe
+C:\Users\Eduardo\Documents\GitHub\Teste-Pr-tico---TecnoExpress\Teste Pratico - Tecnoexpress\Teste Pratico\obj\Release\Teste Pratico.pdb
